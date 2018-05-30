@@ -14,15 +14,15 @@ public class ATMServiceTest {
     public void cash_2000() {
         Cash cash = service.retrieveMoney(2000);
 
-        assertEquals(new Integer(2), cash.getNote_1000());
+        assertEquals(2, cash.getNote_1000());
     }
 
     @Test
     public void cash_1001() {
         Cash cash = service.retrieveMoney(1001);
 
-        assertEquals(new Integer(1), cash.getNote_1000());
-        assertEquals(new Integer(1), cash.getCoin_1());
+        assertEquals(1, cash.getNote_1000());
+        assertEquals(1, cash.getCoin_1());
 
         assertNull(cash.getNote_500());
         assertNull(cash.getNote_100());
@@ -37,12 +37,12 @@ public class ATMServiceTest {
     public void cash_578() {
         Cash cash = service.retrieveMoney(578);
 
-        assertEquals(new Integer(1), cash.getNote_500());
-        assertEquals(new Integer(1), cash.getNote_50());
-        assertEquals(new Integer(1), cash.getCoin_20());
-        assertEquals(new Integer(1), cash.getCoin_5());
-        assertEquals(new Integer(1), cash.getCoin_2());
-        assertEquals(new Integer(1), cash.getCoin_1());
+        assertEquals(1, cash.getNote_500());
+        assertEquals(1, cash.getNote_50());
+        assertEquals(1, cash.getCoin_20());
+        assertEquals(1, cash.getCoin_5());
+        assertEquals(1, cash.getCoin_2());
+        assertEquals(1, cash.getCoin_1());
 
         assertNull(cash.getNote_1000());
         assertNull(cash.getNote_100());
@@ -53,8 +53,8 @@ public class ATMServiceTest {
     public void cash_15() {
         Cash cash = service.retrieveMoney(15);
 
-        assertEquals(new Integer(1), cash.getCoin_10());
-        assertEquals(new Integer(1), cash.getCoin_5());
+        assertEquals(1, cash.getCoin_10());
+        assertEquals(1, cash.getCoin_5());
 
         assertNull(cash.getNote_1000());
         assertNull(cash.getNote_500());

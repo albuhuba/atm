@@ -1,0 +1,16 @@
+.bs-dark.navbar-inverse {
+  background-color: #222;
+  border-color: #080808;
+  margin-bottom: 0.4em;
+}
+
+.div-border {
+  border-style: solid;
+  border-color: #2196F3;
+  padding: 0.2em;
+  margin: 0.5px;
+}
+
+.default-padding {
+    padding: 0.2em;
+}

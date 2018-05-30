@@ -5,17 +5,16 @@ import lombok.Data;
 @Data
 public class Cash {
 
-    private Integer note_1000;
-    private Integer note_500;
-    private Integer note_200;
-    private Integer note_100;
-    private Integer note_50;
+    private int note_1000;
+    private int note_500;
+    private int note_200;
+    private int note_100;
+    private int note_50;
 
-    private Integer coin_20;
-    private Integer coin_10;
-    private Integer coin_5;
-    private Integer coin_2;
-    private Integer coin_1;
-
+    private int coin_20;
+    private int coin_10;
+    private int coin_5;
+    private int coin_2;
+    private int coin_1;
 
 }
